@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    z-index: 0;
+    font-family: 'Inter';
+}
+
+:root{
+    
+    --preto: #000000;
+    --roxo: #8C45FF;
+    --roxo-d1: #4A208A;
+    --roxo-d2: #371866;
+    --roxo-d3: #190D2E;
+    --border: rgba(255,255,255,15%);
+    --font-inactive:rgb(180, 180, 180);
+    --font-active:#fff
+}

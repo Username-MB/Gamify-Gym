@@ -1,0 +1,14 @@
+.introTxtRoot {
+    width: 100vw;
+}
+
+.introTxtRoot h1 {
+    margin: 2.5vw;
+    color: white;
+    font-size: 5em;
+    font-weight: 700;
+    text-align: center;
+/* }
+.introTxtRoot::after{
+    box-shadow: inset;
+} */

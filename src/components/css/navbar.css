@@ -1,0 +1,61 @@
+.navbarRoot {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    align-items: center;
+    justify-items: center;
+    width: 100vw;
+    height: 10vh;
+    background-color: var(--preto);
+    padding: 10px;
+    border-bottom: 1px solid var(--border);
+}
+
+.navbarRoot .logoCont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-column: 1 / 2;
+}
+
+.navbarRoot .buttonCont {
+    width: 60%;
+    max-width: 600px;
+    height: 50%;
+    min-width: 300px;
+    grid-column: 4 / 8;
+    border: 1px solid var(--border);
+    border-radius: 100px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 5%;
+}
+
+.buttonCont .navButton {
+    flex: 1;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    color: var(--font-inactive);
+}
+.loginText{
+    transition: all 0.2s ease;
+}
+.navButton:hover, a:hover .loginText {
+    color: var(--font-active);
+}
+.navButton.inLogin .loginText.inLogin{
+    color: var(--roxo);
+    cursor: auto;
+}
+
+/* .navbarRoot + div {
+    margin-top: 2vh;
+    width: 100%;
+  } */
