@@ -1,0 +1,23 @@
+name: Sync Frontend Branch
+
+on:
+  push:
+    branches:
+      - dev/frontend/web
+
+jobs:
+  sync-frontend:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
+      - name: Sync to Repo 2
+        uses: repo-sync/github-sync@v2
+        with:
+          source_repo: https://github.com/Username-MB/Gamify-Gym.git
+          source_branch: dev/frontend/web
+          destination_repo: https://github.com/Username-MB/Gamify-Gym-Frontend-Web.git
+          destination_branch: dev
+          github_token: ${{ secrets.PAT_FRONT_WEB }}
