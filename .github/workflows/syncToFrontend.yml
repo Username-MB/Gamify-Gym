@@ -13,7 +13,7 @@ jobs:
         with:
           ref: dev/frontend/web
 
-      - name: Push to Repo 2
+      - name: Push to FWeb
         run: |
-          git remote add FWeb https://${ secrets.TOKEN_SYNC }@github.com/Username-MB/Gamify-Gym-Frontend-Web.git
+          git remote add FWeb https://${{ secrets.TOKEN_SYNC }}@github.com/Username-MB/Gamify-Gym-Frontend-Web.git
           git push --force FWeb dev/frontend/web:dev
